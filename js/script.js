@@ -165,14 +165,13 @@ function DeleteSelectedTabs() {
     const selectedList = $('ul li input');
     selectedList.each(function() {
         if ($(this).is(':checked')) {
-            console.log(this);
             const selectedTab = $(this).parent();
             const currentDiv = selectedTab.find('a').attr('href');
             $(selectedTab).remove();
             $(currentDiv).remove();
+            $('#tab-window').tabs('option', 'active', 0);
         }
     });
-    $('#tab-window').tabs('option', 'active', 0);
 }
 
 function AddTab(window, list, name) {
@@ -203,8 +202,8 @@ function TabExists(window, name) {
 }
 
 function PullTableName() {
-    const cols = $('#minCol').val() + '-' + $('#maxCol').val() + 'x'; 
-    const rows = $('#minRow').val() + '-' + $('#maxRow').val();
+    const cols = $('#minCol').val() + '_' + $('#maxCol').val() + 'x'; 
+    const rows = $('#minRow').val() + '_' + $('#maxRow').val();
     return cols + rows;
 }
 
