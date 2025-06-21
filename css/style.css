@@ -132,9 +132,6 @@ th, #results > tbody > tr > td:first-child{
 .slider {
     margin: 20px auto 10px auto;
 }
-.ui-state-default, .ui-widget-content .ui-state-default {
-    background-color: #ededc5;
-}
 /* 
  * tab stylings
  */
@@ -164,13 +161,13 @@ th, #results > tbody > tr > td:first-child{
     align-content: center;
     width: 100%;
 }
+.ui-state-default, .ui-widget-content .ui-state-default {
+    background-color: #e8e8b0;
+}
 .ui-state-active, .ui-widget-content .ui-state-active {
     background-color: #bfbf8a;
 }
 /* sliders and buttons */
-.ui-state-default, .ui-widget-content .ui-state-default {
-    background-color: #e8e8b0;
-}
 .ui-tabs-anchor {
     color: black;
 }
