@@ -165,13 +165,14 @@ function DeleteSelectedTabs() {
     const selectedList = $('ul li input');
     selectedList.each(function() {
         if ($(this).is(':checked')) {
+            console.log(this);
             const selectedTab = $(this).parent();
             const currentDiv = selectedTab.find('a').attr('href');
             $(selectedTab).remove();
             $(currentDiv).remove();
-            $('#tab-window').tabs('option', 'active', $('#tab-window ul').children().length - 1);
         }
     });
+    $('#tab-window').tabs('option', 'active', 0);
 }
 
 function AddTab(window, list, name) {
