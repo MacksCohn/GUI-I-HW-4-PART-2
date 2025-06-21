@@ -150,51 +150,31 @@ th, #results > tbody > tr > td:first-child{
     max-height: calc(100% - 280px - 20px - 10%);
 }
 
+/* header bar */
 .ui-widget-header {
     margin: 0px 20%;
     border:0;
     background-color: #f5f5da;
     width:100%;
 }
+/*inside darker window*/
 #tab-window .ui-widget-content {
     background-color: #bfbf8a;
     border-radius: 5px;
     align-content: center;
     width: 100%;
 }
-.ui-state-default, .ui-widget-content .ui-state-default {
-    background-color: #e8e8b0;
-}
 .ui-state-active, .ui-widget-content .ui-state-active {
     background-color: #bfbf8a;
+}
+/* sliders and buttons */
+.ui-state-default, .ui-widget-content .ui-state-default {
+    background-color: #e8e8b0;
 }
 .ui-tabs-anchor {
     color: black;
 }
-#control-panel {
-    margin: 20px auto 10px auto;
-    width: fit-content;
-    height: fit-content;
-    text-align: center;
-}
-
-.button {
-    border-style: dashed;
-    border-radius: 5px;
-    border-width: 1px;
-    padding: 4px;
-    margin: 10px 10px 0px 10px;
-    width: auto;
-    float:none;
-    background-color: #e8e8b0;
-}
-.button:hover {
-    background-color: #f5f5c9;
-}
-.button:active {
-    background-color: #bfbf8a;
-}
-
+/* tab checkbox stylings */
 input[type=checkbox] {
     appearance: none;
     border: 1px solid black;
@@ -221,3 +201,29 @@ input[type=checkbox]:checked {
     height: 15px;
     background-color: lightcoral;
 }
+
+/* styling for bottom control panel*/
+#control-panel {
+    margin: 20px auto 10px auto;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+}
+
+.button {
+    border-style: dashed;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 4px;
+    margin: 10px 10px 0px 10px;
+    width: auto;
+    float:none;
+    background-color: #e8e8b0;
+}
+.button:hover {
+    background-color: #f5f5c9;
+}
+.button:active {
+    background-color: #bfbf8a;
+}
+

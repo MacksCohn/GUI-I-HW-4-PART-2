@@ -47,6 +47,7 @@ function Generate(id) {
 }
 
 $(function () {
+    // validations
     $('#input-form').validate({
         // places the error as the last thing in that table row
         errorPlacement: function(error, element) {
@@ -112,6 +113,7 @@ $(function () {
     });
     Generate('results');
 
+    // sliders
     $('.slider').slider({
         min: -50,
         max: 50,
@@ -127,8 +129,10 @@ $(function () {
     sliders.each(function () {
         $(this).slider('option', 'value', $(this).siblings('input').val());
     });
+    // create tabs
     $('#tab-window').tabs();
 
+    // bind button event listeners
     $('#save-button').on('click', function()  { SaveCurrentTab() });
     $('#delete-current-button').on('click', function() { DeleteCurrentTab() });
     $('#delete-selected-button').on('click', function() { DeleteSelectedTabs() });
